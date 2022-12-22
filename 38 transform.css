@@ -1,0 +1,44 @@
+/*  mind that in transform it treats the object positioned like position:relative; so that its tranformation dosent affect what so ever it contains in such as contain */
+/* thats why i created another div named cont2 with the same properties as named box */
+
+.box{
+    
+height: 400px;
+width: 400px;
+justify-content: center;
+align-items: center;
+    display: flex;
+    background-color: yellowgreen;
+    transition: all 0.5s ease-in-out ;
+    /* transform: rotate(0deg); */
+}
+.container{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    background-color: thistle;
+    height: 80vh;
+    
+}
+
+.box:hover{
+    transition: all 1s ease-in-out ; 
+     transform: rotate(360deg);
+transform: skew(40);
+transform: scale(3);
+transform: translateX(123px);
+transform:translateY(123px);
+transform: translate(123px, 123px); 
+
+
+/* transform: perspective(500px) translate3d(100px,0px,50px); */
+
+
+
+}
+
+*{
+
+    margin: 0px;
+   padding: 0px; 
+}

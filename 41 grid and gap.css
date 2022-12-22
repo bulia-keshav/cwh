@@ -1,0 +1,17 @@
+.grid{
+border: 2px solid black;
+padding: 5px;
+display: grid;
+/* grid-template-columns: 200px 300px 400px; */
+grid-template-rows: 1fr 2fr 3fr  ;
+/* sirf 3 rows k bare m batya, baki automaticallly 2fr krni h to grid auto rows */
+grid-auto-rows: 2fr;
+grid-template-columns: repeat(3,auto );
+grid-gap: 15px;
+
+}
+.box{
+    margin: 10px;
+border: 2px solid black;
+    background-color: tomato;
+}

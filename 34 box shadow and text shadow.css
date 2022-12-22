@@ -1,0 +1,36 @@
+/* i need to try 34 and 35 and maybe 32 as well */
+.container{
+height: 100vh;
+display: flex;
+border: 2px solid  white;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+
+}
+body{
+
+    background-color: rgb(0, 0, 0);
+}
+.card{
+
+    border: 2px solid red;
+    background-color: white;
+    margin: 12px;
+    padding: 12px;
+    height: 300px;
+    width: 400px;
+
+}
+#card4 {
+
+
+
+
+
+}
+#card1,#card3{
+
+    position: relative;
+    top: 25%;
+}

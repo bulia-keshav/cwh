@@ -1,0 +1,34 @@
+/* to not set  rid column gap is a good practice when i want it to work better in responsive deign ie mobile phones  */
+/* try dev tools and responive thing */
+.container{
+width: 90vw;
+margin: auto;
+
+    display: grid;
+border: 2px solid turquoise;
+
+background-color: rgb(251, 199, 110);
+/* grid-template-columns: auto 300px auto; */
+/* grid-template-columns: 2fr 3fr 6fr; */
+/* grid-template-columns: 1fr 3fr 6fr; */
+/*wouldnt work, no space between repeat and parethesis grid-template-columns: repeat ( ); */
+grid-template-columns: repeat(3,auto);
+
+grid-row-gap: 50px;
+
+
+}
+.items{
+text-align: center;
+/* margin: 10px;  */
+padding: 20px;
+margin: 10px;
+color: white;
+background-color: teal;
+    border: 2px solid steelblue;
+}
+#item2{
+
+    /* height: 50px; */
+}
+/* if any one item has the height fixed and height not specified for .items then pure row ki uske jesi same hieght ho jaegi.. however if pure .items ki hieght is set to something ypx and #item3 has zpx then item3 ki height different and baki ki alag.. */

@@ -1,0 +1,75 @@
+/* 2 types of layouts, 1 is using this grid column grid row things, 2nd is using grid area template and area wise matrix banana.. dono ko apne use h  */
+
+/* iske andar layouts k bare m h like you can span the grid areas according to whatever i want, pretty easy ig..... */
+
+body{
+
+
+width: 100vw;
+    background-color: black;
+}
+
+.container{
+
+    margin: 10px;
+    padding: 20px;
+    background-color: goldenrod;
+display: grid;
+border: 2px solid white;
+grid-template-columns: repeat(3, auto);
+/* align-items: center; */
+/* justify-content:space-around; */
+
+}
+.items{
+    
+    padding: 9px;
+    border: 2px solid black;
+  
+    /* width: 300px; */
+    margin: 5px;
+background-color: rgb(253, 253, 253);
+color: rgb(141, 105, 15);
+
+}
+
+.items:nth-child(1){
+/* grid-column-start: 1;
+grid-column-end: 3;
+grid-row-start: 1;
+grid-row-end:4; */
+/* grid-column: 1 / span 2 ; */
+/* best to use : grid row and grid column */
+grid-row: 1 / span 3;
+
+/* grid-column: 1 / span 2; */
+
+}
+.items:nth-child(2){
+    height: 300px;
+    /* to get what 3 /4 see grid lines in dev tools -> layouts -> turn on grid lines */
+    /* grid-column: 3 / 4; -> 3 is starting position 4 is ending positon      */
+    /* grid-column: 3 / span 1; -> 3 is starting postion 1 sis size     */
+    /* sex ho jaega vai isse tohh!! */
+grid-column: 3 / 4;
+grid-row: 1 / 3;
+
+}
+.items:nth-child(7){
+
+    grid-column: 1 / 4;
+    grid-row: 4/ 6; 
+    /* grid-row: 4/ 6; lmao this wouldnt work the way i think it would, also its stupid to made what i was thinking ig */
+}
+.items:nth-child(8){
+
+    grid-column: 1 / 3;
+/* sex ho gya vai ye to */
+}
+.items:nth-child(9){
+    grid-column: 2 / 3;
+    grid-row: 7 / 8;
+
+
+
+}
