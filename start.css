@@ -1,0 +1,19 @@
+ /* jo bad m ata h use zyadaimportance dete h... 
+ inline> internal> external...  13no. line ka css style > 11 no. ka same element style
+ agar fir bhi overwrite krna h to use !important for the needed css */
+
+ /* basically there are 3 types of css: inline in the same line, internal i.e in the head tag with <style>, external is linking external file. */
+.hehe p{
+    color: rgb(0, 0, 0);
+    background-color: aqua;
+}
+footer, span{
+
+    color: bisque;
+    background-color: black;
+}
+p{
+    border: 3px solid rgb(0, 70, 223) ;
+        color: green;
+        background-color: hotpink;
+    }
