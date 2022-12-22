@@ -149,7 +149,7 @@ font-size: 30px;
 color: rgb(96,56,20,255);
 }
 .container{
-    backdrop-filter: blur(4px);
+    backdrop-filter: blur(7px);
 border-radius: 40px;
 width: 400px;
     margin: 100px;
@@ -159,7 +159,7 @@ display: inline-block;
 }
 .container:hover{
     transition: 0.1s;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(15px);
 
 }
 .idk{
