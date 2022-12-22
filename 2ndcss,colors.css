@@ -1,0 +1,19 @@
+p{
+
+    color: red;
+    font-style: italic;
+    line-height: 1em;
+    font-family: 'Kolker Brush', cursive;
+    font-size: 50px;
+
+
+}
+.colors p{
+    
+    color: rgb(255, 255, 255);
+    /* color by rg valuyes */
+    background-color: rgb(98, 0, 0); 
+
+/* hex color  */
+color: #fff;
+}

@@ -1,0 +1,65 @@
+*{
+box-sizing: border-box;
+    font-size: 30px;
+}
+
+.items{
+border: 2px solid rgb(43, 90, 57);
+margin: 20px;
+background-color: rgb(251, 232, 186);
+}
+/* floats are ffor alignments */
+
+.container{
+background-color: rgb(238, 222, 238);
+    margin: 50px auto;
+
+width: 1000px;
+border: 10px solid rgb(194, 120, 1)
+
+
+}
+.para{
+
+color: tomato;
+    margin: 10px;
+}
+h3{
+
+    margin:20px 10px;
+}
+#fruits{
+
+float: left;
+
+width: 45%;
+height: auto;
+
+
+}
+#stat{
+border-color: rgb(112, 144, 48);
+    float: right;
+    width: 45%;
+
+}
+
+/* left float wale overlap na kre: clear: left and both for both side floats */
+#panties{
+ margin: auto;
+margin-bottom: 20px;
+    width: 96%;
+clear: both;
+}
+h1{
+    border: 3px solid black;
+text-align: center ;
+width: 455px;
+margin: 20px auto;
+ 
+
+
+}
+
+    
+

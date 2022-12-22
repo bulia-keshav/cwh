@@ -1,0 +1,94 @@
+/* display buttton,, turning inline to block displays..quite useful1!! */
+/* display inline is jitni width h utna hi h
+display block yani width set kr skte h.. jo initially puri space  */
+/* new type now,, inline block jiski help se me 3-5 aur more ko ek line m dal skta hu damnnnn */
+/* ig its useful when i dont want to use flex grid etc for alignment, again a hard way to do so... */
+img{
+    display: block;
+width: 200px;
+border:5px solid rgb(133, 133, 133);
+margin: auto;
+}
+
+h3{
+
+margin: 0;
+text-align: center;
+    font-family:cursive;
+}
+header{
+border:3px solid black;
+margin:auto auto;
+width: 30%;
+}
+.box1{
+    display: inline-block;
+
+border: 4px solid tomato;
+background-color: thistle;
+padding: 23px;
+width: 25%;
+box-sizing: border-box;
+margin-right: 200px;
+
+}
+.box2{
+    display: inline-block;
+
+border: 4px solid tomato;
+background-color: thistle;
+padding: 23px;
+width: 25%;
+box-sizing: border-box;
+margin-right: 70px;
+
+}
+.box3{
+    display: inline-block;
+
+border: 4px solid tomato;
+background-color: thistle;
+padding: 23px;
+width: 25%;
+box-sizing: border-box;
+margin-left: 70px;
+
+}
+.box4{
+    display: inline-block;
+
+border: 4px solid tomato;
+background-color: thistle;
+padding: 23px;
+width: 25%;
+box-sizing: border-box;
+
+
+}
+.box5{
+    display: inline-block;
+
+border: 4px solid tomato;
+background-color: thistle;
+padding: 23px;
+width: 25%;
+box-sizing: border-box;
+
+
+}
+.box6{
+    display: inline-block;
+
+border: 4px solid tomato;
+background-color: thistle;
+padding: 23px;
+width: 25%;
+box-sizing: border-box;
+
+
+}
+.container{
+margin-top: 20px;
+border:3px solid black;
+
+}

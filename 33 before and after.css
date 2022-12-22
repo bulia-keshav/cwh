@@ -1,0 +1,73 @@
+/*  useful technique
+to put bg, reduce the opacity without also decreasign the opacity for the whole body ites.. 
+explaination
+f we wanted to reduce opacity of bg we would have to do it in body{} which would reduce opacity of text also. So to seperate bg and text he used ::before with  bg  & no content. Now reducing opacity in section::before selector reduces opacity of bg but not the text because they are seperate now. */
+
+/* i can set the height of a container as as 100% as same as 100vh when its in position:absolute or relative */
+
+
+/* things to try:1. this very 33before and after on my own */
+/*               2. to increase padding, margin of a particular in the flex box either by using (nth child) of giving class or id to the element  */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    color: white;
+}
+
+header::before{
+    background: url('https://source.unsplash.com/collection/190727/1600x900') no-repeat center center/cover;
+    content: "";
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    top:0;
+    left: 0;
+    /* border: 2px solid rgb(255, 0, 0); */
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.navigation {
+    font-family: 'Bree Serif', serif;
+    font-size: 20px;
+    display: flex;
+}
+
+li {
+    list-style: none;
+    padding: 20px 23px;
+}
+
+section {
+    height: 344px;
+    font-family: 'Bree Serif', serif;
+    margin: 3px 230px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+p {
+    text-align: center;
+}
+
+/* section::after{
+content:"this is a content"
+} */
+
+header{
+  /* position: absolute;
+  width: 100vw;
+height: 100vh; */
+    /* border: 2px solid red; */
+}
+
+ 

@@ -1,0 +1,56 @@
+/* tomato and black looks good fr fr */
+
+/* it includes the  hover property with eg of buttons and links/a , visited property*/
+
+/* visited as the name suggests, changes when cliked..after efexts */
+/* active yani every time i click it shows the different color and effects  */
+
+*{
+
+    font-family: 'Kolker Brush', cursive;
+    font-family: 'Ubuntu', sans-serif;
+font: bold;
+}
+.container{
+border: 2px solid red;
+background-color: rgb(230, 182, 105);
+padding: 20px;
+height:200px;
+margin: 20px auto;
+width: 600px;
+
+}
+
+.btn1{
+    border: 5px solid rgb(255, 255, 255);
+color: black;
+    background-color: white;
+    padding: 5px;
+
+    cursor: pointer;
+margin-right: 40px;
+ font-size: 30px;
+border-radius: 5px;
+font:larger;
+
+
+}
+a{
+
+    text-decoration: none;
+}
+.btn1:hover{
+border:5px solid rgb(110, 127, 200);
+color:white ;
+background-color: black;
+}
+.btn1:visited{
+color: tomato;
+
+}
+.btn1:active{
+
+background-color: blue;
+
+}
+/* how do i lock the position of this buttons? ie hover on the buttons */

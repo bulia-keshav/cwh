@@ -1,0 +1,36 @@
+
+
+
+/* vh =  view port height=  100vh as 100 percent of total height, as same of viewport 
+  vw as view port width*/
+
+  /* em is empheral unit, font size of x multipied by parent font size */
+  /* rem is root em, html  */
+html{
+    font-size: 30px;
+
+}
+
+  body{
+
+font-size: 10px;
+
+}
+.container{
+
+border: 2px solid red;
+height: 200vh;
+
+}
+
+
+  #first{
+
+      font-size: 4em;
+/* here font size is equal to 10 times of whatever is font size of parent element(if container's font size is not set, then font size of body would be considered)i.e. body ie 10px thus 100 px ; */
+
+    /* font-size: 5rem ; */
+
+    /* 3rem - 3 times html size, relative to whatever root site font is.. */
+
+  }

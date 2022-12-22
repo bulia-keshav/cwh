@@ -1,0 +1,31 @@
+.box{
+font-size: 50px;
+    text-align: center;
+    color: white;
+background-color: black;
+display: none;
+}
+
+@media only screen and  (min-width:300px) and (max-width: 500px)  {
+
+    #box1{
+        display: block;
+
+    }
+    
+}
+@media (min-width:500px) and (max-width:800px){
+
+    #box2{
+
+        display: block;
+    }
+}
+@media (max-width:300px){
+
+#box3{
+    display: block;
+}
+
+
+

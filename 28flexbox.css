@@ -1,0 +1,82 @@
+.container{
+border: 2px solid tomato;
+height: 500px;
+display: flex;
+/* flex-direction: row; */
+flex-wrap: wrap;
+/* align-items: center;  */
+/* flex-flow: row-reverse wrap-reverse; */
+
+/* justify content is for horizontally */
+justify-content: center; 
+/* justify-content: center; center m le ata h and do not mess with space between blocks but space between end block and corners */
+
+/* justify-content: space-evenly; */
+/* justify-content: space-evenly; space between block and block = space between block and edge */
+
+/* justify-content: space-between; */
+/* justify-content: space-between; space between block and block is only space and does not mess with space between block and edge */
+
+/* justify-content: space-around; */
+/* justify-content: space-around;  space-around; space between block and block = 2 x space between block and edge  */
+/* align items is for vertical alignment */
+align-items: center;
+/* for aligning items in vertically, must set height of the container before that tho */
+
+/* align-items: flexstart and flexend, vertical m upar and niche respectivelly */
+/* align-items: flex-end; */
+ align-items: stretch;
+ /* works in wrap, to see, get in 6 blox-> 3 in each row. decrase height  then see, it  puts....just see  */
+
+
+
+}
+
+.box{
+    margin: 10px;
+    width: 170px;
+    height: 100px;
+background-color: thistle;
+border: 2px solid black;
+
+
+
+
+}
+
+/* now flex property for items */
+#box1{
+/* to arrange the items, we can use order property, jiska zyada order vo bad m ayega... highest order wala last m show krega  */
+order: 0;
+
+}
+#box2{
+
+
+
+    flex-grow: 0;
+
+    /* if made screen bigger than what is,.. is proportion p badhega.. must apply flexgrow for another also with smaller or more number to see kon kitni speed se badhega */
+/* same there is flex shrink..if item1 flex shrink is 2 and 3 for item 2 then item 2 jldi shrink and 1 is normal speed */
+}
+
+
+
+
+/* #item-2{
+            /* flex-grow: 3;
+            flex-shrink: 3 ; */
+            /* flex-basis: 160px; */
+            /* when flex-direction is set to row flex-basis: will control width */
+            /* when flex-direction is set to column flex-basis: will control height 
+}*/
+        
+        /* #item-3{ */
+            /* flex: 2 2 230px; */
+            /* align-self: flex-start;
+            align-self: flex-end;
+            align-self: center;
+/* align self let us align a single object however we want
+there is also the justify self tag which also handles the individual boxes along the main axis
+a */
+

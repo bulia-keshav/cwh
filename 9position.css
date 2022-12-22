@@ -1,0 +1,63 @@
+/* position: static(default) absolute, relative, sticky, fixed  */
+/* advised to actually uncomment them one by one and learn... gaps wali things is sort of wierd but ill allow it.. */
+.box{
+border: 2px solid red;
+width: 150px;
+height:150px ;
+margin: 2px;
+display: inline-block;
+
+}
+#box3{
+
+
+
+/* relative means relative to its original position and leave a gap from its normal position */
+    /* now i can use properties: top left roight down */
+/* position: relative;
+top: 35px;
+left:30px */
+
+
+
+
+
+/* absolute me parent k relative krta h.. i.e.  for eg.( jese iska parent div is container).... and ALSO.. no gap is left */
+/* position: absolute;
+top: 35px;
+left:30px; */
+
+
+
+
+/* position fixed se iski position fixed remains no matter how you scroll ... also... it does not leave the gap... dusra object overwrite kr deta h...*/
+/* position relative to the browser window */
+  position: fixed;
+bottom:3px;
+right:3px;
+/* can be use as a chatbox */
+
+
+
+
+  /* sticks to the place chahe kitna hi scroll kro but the thing is it leaves the gap */ 
+/* position: sticky;
+top:100px;  */
+/* cant use left and right in sticky ig.. .. so i guess we cant use it as a chat box at the bottom right
+but we can use it as the sticky menu for a site */
+
+
+
+
+
+/*  absoulte and relative.... sticky and fixed are sort of pairs in terms of leaving gaps or not... */
+
+/* one more difference between the sticky and the fixed:      */
+/* If you make a  particular element inside a container as fixed, then irrespective of container height, as we scroll, the element stays at the same position till you scroll to end of web page. */
+
+/* If you make an element as sticky and if its inside a container, then as you scroll, the element will be in the same position until the container height. While scrolling, if the container is also scrolled down, then the sticky element in the container will also move top with container. */
+}
+.container{
+
+    height: 35000px;
+}

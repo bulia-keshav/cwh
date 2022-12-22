@@ -1,0 +1,89 @@
+*{
+
+ margin: 0;
+}
+/* borderstyle is most imp to give.. sabse pehle wahi define crow */
+/* to center an element without using flex, see para */
+/* made the internal as relative and outer as absolute with top at 50% and then minus the height of the outer element..  */
+/* tho there are other ways but this is one of the ways without the flex(flex is quite easy as i hv heard) */
+/* put it in a div and then write  */
+    
+.para{
+
+padding: 10px;
+left: 50% ;
+margin-left: -150px;
+top: 50%;
+margin-top: -10px ;
+position: absolute;
+
+background-color: rgb(4, 73, 105);
+height: 100px;
+width:300px;
+border-color:rgb(0, 0, 0) ;
+color: rgb(255, 255, 255);
+border-style: groove;
+font-size: 25px;
+border-width: 4px;
+
+
+
+
+}
+.para p {
+
+    padding: 25px;
+        text-align: center ;
+        position: relative;
+    }    
+.hara{
+    left: 40%;
+
+position: relative;
+    padding: 10px;
+        margin: 0;
+    
+    
+    background-color: rgb(255, 217, 0);
+    height: 100px;
+    width:300px;
+    border-color:rgb(0, 0, 0) ;
+    color: black;
+border-top: 5px solid green;
+border-left: 5px solid rgb(255, 0, 0);
+border-right: 5px solid rgb(0, 0, 0);
+border-bottom: 5px solid green;
+border-top-right-radius: 30px;
+border-top-left-radius: 30px;
+    
+    }
+    /* yaha mene div m text rakha h so i wanted ki position of image and text ko control krne ka try.. kara ko absolute and text ko accordingly kiya */
+.kara {
+
+    z-index: -1;
+box-sizing: border-box;
+border: 50px solid rgb(0, 0, 0);
+border-collapse:separate;
+    height: 10px;
+width:1440px;
+    color: rgb(255, 255, 255);
+
+    background-image: url('https://source.unsplash.com/random/500x500/?dark/');
+    /* agar repeat nahi krna image to use this but also agar sirf x ya me repeat m to use repeat-x or y  */
+    background-position: center center;
+position: absolute;
+/* background position has format of background-position: horinzotnal vertical,eg.center top, center center, 30px 50px, etc. */
+
+
+}
+.kara h1{
+position: absolute;
+margin: 1px;
+    font-size: 100px;
+top: 50%;
+margin-top: -50px;
+font-weight: bold;
+left: 50%;
+margin-left: -30px;
+}
+/* left on 12:30minutes */
