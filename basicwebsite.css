@@ -1,0 +1,479 @@
+/* i have no idea how the sticky actually worked, but i know ki sticky pehle sure kr dena chiye before going for manipulation of inside things.. 
+tip: try to remove the sticky thing, you will get it what happens..
+new i learnt about the backdrop and filter tags.. filter se current wale pe farak padta h such as  filter: drop-shadow(15px 15px 10px); etc.. backdrop-filter: blur(5px) something i used to blur the piche ka background..  
+overall it worked out to be good.. but i think this plus animative scroll would be a good thing..*/
+
+*{
+    margin: 0px;
+}
+body{
+
+    font-family: 'Dancing Script', cursive;
+height: 110vh;background-size: 100%;
+    box-sizing: border-box;
+color: rgb(41, 22, 22);
+background-image: url(img/pexels-allan-franca-carmo-3465604.jpg) ;
+
+
+background-repeat: no-repeat;
+background-color: rgb(255, 255, 255);
+}
+
+h1{
+
+color: rgb(0, 0, 0);
+font-size: 100px;
+
+
+}
+
+.navbar{
+
+    background-color: transparent;
+
+
+
+    z-index: 2;
+position: sticky;
+height: 100px;
+top: 50px;
+
+}
+.head{
+
+
+
+width: 80%;
+margin: auto;
+
+    margin-top: 59px;
+height: 62px;
+background-color: rgb(246,246,246);
+border-radius: 50px;
+
+    
+
+}
+ .right, .left{
+
+display: inline-block;
+
+
+height: 62px;
+}
+.mid{
+transform: none;
+    left: 41% ;
+
+margin: auto;
+top: -41px;
+    position: absolute;
+
+
+}
+.mid img{
+border-radius: 500px;
+    height: 150px;
+}
+.left h1,.right  h1{
+text-decoration: none;
+    display: inline-block;
+padding: 0px 25px;
+    font-size:27.5px;
+color: black;
+
+}
+.right{
+
+
+    position: absolute;
+    top:14px;
+right: 155px;
+
+}
+.left a{ 
+
+position: relative;
+
+
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.right, .left{
+
+    display: inline-block;
+
+    
+    
+}
+.left {
+
+position: absolute;
+top: 12px;
+left: 140px;
+padding-left: 14px ;
+
+}
+.head a:hover{
+    color: rgb(96,56,20,255);
+
+
+
+}
+.big a{
+font-size: 30px;
+}
+.right span{
+
+
+    padding: 0px 12px;
+    padding-left: 5px;
+    margin: 0px 2px;
+    position: relative;
+    top: 4px;
+    right: -4px;
+}
+.left a{
+
+    padding-right: 15px;
+}
+.big a{
+
+
+color: rgb(96,56,20,255);
+}
+.container{
+    backdrop-filter: blur(4px);
+border-radius: 40px;
+width: 400px;
+    margin: 100px;
+    padding: 10px 10px;
+transition: 1s;
+display: inline-block;
+}
+.container:hover{
+    transition: 0.1s;
+    backdrop-filter: blur(10px);
+
+}
+.idk{
+    border-radius: 20px;
+    padding-left: 20px;
+text-align: justify;
+    filter: drop-shadow(15px 15px 10px);
+color: white;
+font-size: 50px;
+}
+.formin{
+font-family: c;
+margin: 10px;
+font-family:'Courier New', Courier, monospace;
+    color: white;
+border: none;
+}
+.forme{
+background-image: url();
+padding-left:30px;
+width: 300px;
+    color:rgb(255, 0, 0);
+
+}
+.forme input{
+    font-family: cursive;
+    border: none;
+    border-bottom:3px solid rgb(255, 255, 255);
+    text-align: center;
+    font-family:'Courier New', Courier, monospace;
+font-size: 25px;
+margin-top: 20px;
+
+
+width: 300px;
+    color: rgb(255, 255, 255);
+
+    background-color:transparent ;
+}
+::placeholder{
+    color: white;
+    font-family:'Courier New', Courier, monospace;
+
+    opacity: 1;
+    
+}
+.grey{
+    font-weight:normal;
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+font-size: 22px;
+color: rgb(0, 0, 0);
+filter: drop-shadow(15px 15px 10px);
+}
+.btnn{
+    display: inline-block;
+border-radius: 20px;
+width: 150px;
+padding: 2px;
+background-color: rgb(37, 24, 24);
+color: rgb(250, 250, 250);
+font-size: 30px;
+cursor: pointer;
+border: none;
+margin: 10px;
+margin-left: 120px;
+font-family:'Courier New', Courier, monospace;
+
+}
+.btnn:active{
+
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+.aside{
+color: rgb(255, 255, 255);
+   
+text-shadow: rgb(119, 71, 9) 2px 2px 19px;
+background-color: transparent;
+padding: 0px 10px;
+display: flexbox;
+display: inline-block;
+
+flex-direction: column;
+position: absolute;
+top: 277px;
+right: 42px;
+font-size: 50px;
+}
+.inside{
+    width: 700px;
+    text-align: center;
+    
+    margin: 0px;
+    
+}
+#pic{
+    visibility: hidden;
+    z-index: 10;
+    display: none;
+}
+#quote{
+    z-index: 1;
+    animation-name: down;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+animation-delay: 1s;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+}
+
+@keyframes down {
+ 0%{
+        position: absolute;
+        top: 0px;
+        right: 42px;
+        text-shadow: rgb(119, 71, 9) 2px 2px 2px;
+    }
+30%{  position: absolute;
+    top: 0px;
+    right: 42px;
+    text-shadow: rgb(119, 71, 9) 2px 2px 2px;
+
+
+}  
+  
+ 70% { 
+position: absolute;
+color: transparent;
+top: 150px;
+right: 42px; 
+text-shadow: rgb(119, 71, 9) 2px 2px 30px;
+
+}
+100%{position: absolute;
+    color: transparent;
+    top: 150px;
+    right: 42px; ;
+    text-shadow: rgb(119, 71, 9) 2px 2px 30px;}
+}
+.block{
+    
+    width: 720px;
+    height: 144px;
+
+    display: inline-block;
+    position: absolute;
+color: rgb(255, 255, 255);
+font-size: 60px;
+
+animation-name: up;
+text-shadow: white 2px 2px 5px;
+
+    top: 428px;
+    right:44px ;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+animation-delay: 1s;
+animation-direction: alternate;
+animation-timing-function: ease-in-out;
+
+
+
+}
+
+@keyframes up {
+    0%{
+           position: absolute;
+           top: 428px;
+    right:44px ;
+           color: transparent;
+           text-shadow: rgb(119, 71, 9) 2px 2px 30px;
+   
+       }
+   30%{  position: absolute;
+    top: 428px;
+    right:44px ;
+color: transparent;
+text-shadow: rgb(119, 71, 9) 2px 2px 30px;
+   
+   
+   } 
+      
+    70% { 
+   position: absolute;
+   top: 300px;
+   right: 44px; ;
+   text-shadow: rgb(119, 71, 9) 2px 2px 2px;
+   }
+   100%{position: absolute;
+       top: 300px;
+       right: 44px; ;
+       text-shadow: rgb(119, 71, 9) 2px 2px 2px;}
+   }
+   .gallery{
+      background-color: rgba(242,242,242,255);
+        backdrop-filter: blur(20px);
+       padding-top: 50px;
+height: 4000px;
+font-size: 60px;
+text-align: center;
+margin: 200px 0px;
+
+color: black;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+
+
+
+   }
+
+.filex{
+columns: 3;
+    font-size: 20px;
+display: grid;
+align-items: center;
+justify-content: center;
+/* flex-wrap: wrap; */
+grid-template-columns: repeat(3, auto );
+
+
+}
+.box{
+
+    margin: 30px;
+    margin: 50px 20px;
+    margin-bottom: 10px;
+    padding: 3px;
+    height: 400px;
+    width: 300px;
+
+}
+#box2{
+  
+    
+    background: url(img/pexels-arthur-brognoli-2260824.jpg);
+    background-size: 150%;
+
+    background-position: center center;
+}
+#box3{
+background: url(img/pexels-wendy-wei-1787141.jpg);
+background-size: 100%;
+
+
+}
+#box1{
+    
+display: grid;
+grid-template-rows: repeat(3, 1fr);
+position: relative;
+right: 40px;
+
+}
+.write{
+
+    height: auto;
+    font-size: 16px;
+    text-align: center;
+padding: 5px;
+font-family: 'Inconsolata';
+font-weight: medium;
+}
+
+#icon1 img{
+filter: transparent;
+    width: 400px;
+    position: relative;
+    bottom: 200px;
+    right: 50px;
+
+
+
+
+}
+#icon1{
+   
+
+    height: 100px;
+}
+#icon3{padding-top: 30px;
+font-size: 17px ;
+font-weight:bold ;
+position: relative;
+right: 30px;
+top: 20px;
+
+
+}
+#icon4{
+padding: 10px;
+height: 200px;
+position: relative;
+top:40px;
+width: 300px;
+}
+#box4{
+
+    background: url(img/pexels-mart-lmj-2564081.jpg);
+
+    background-size: 100%;
+
+    
+    }
+    #box5{
+
+        background: url(img/pexels-luis-quintero-2148216.jpg);
+        
+        background-size: 100%;
+
+        
+        }
+        #box6{
+
+            background: url(img/pexels-julie-aagaard-2467287.jpg);
+            
+            background-size: 100%;
+
+            
+            }
